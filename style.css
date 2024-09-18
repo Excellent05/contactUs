@@ -14,8 +14,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("/pics/bg.png") no-repeat center center/cover;
-    gap: 0.5%;
+    background: url("/pics/bg.png") no-repeat center/cover;
+    gap: 1.5%;
 }
 
 .container form{
@@ -27,57 +27,6 @@
     border-radius: 15px;
     background: rgba(255,255,255,0.1);
     flex-wrap: wrap;
-}
-
-.container .contactInfo{
-    width: 300px;
-    height: 400px;
-    display: flex;
-    border-radius: 15px;
-    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-    background: rgba(255,255,255,0.1);
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.container .contactInfo h1{
-    color: #fff;
-    text-align: center;
-    margin-top: 10px;
-    font-weight: 500;
-    width: 500px;
-}
-
-.container .contactInfo .social{
-    margin-top: 0px;
-    height: 300px;
-    /* background-color: chartreuse; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2%;
-}
-
-.container .contactInfo .social .locate,
-.container .contactInfo .social .phone,
-.container .contactInfo .social .email{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    /* background-color: chocolate; */
-    gap: 2%;
-}
-
-.container .contactInfo .social .locate p,
-.container .contactInfo .social .phone p,
-.container .contactInfo .social .email p{
-    color: #fff;
-    font-weight: 300;
-    font-size: 15px;
-    text-align: center;
 }
 
 .container form h1{
@@ -131,14 +80,6 @@
     max-height: 80px;
 }
 
-textarea::-webkit-scrollbar{
-    width: 1em;
-}
-
-textarea::-webkit-scrollbar-thumb{
-    background-color: rgba(194,194,194,0.713);
-}
-
 .container form #button{
     border: none;
     background: #fff;
@@ -156,4 +97,138 @@ textarea::-webkit-scrollbar-thumb{
 
 .container form #button:hover{
     opacity: 0.7;
+}
+
+.container .contactInfo{
+    width: 350px;
+    height: 400px;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.1);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .contactInfo h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+    width: 500px;
+}
+
+.container .contactInfo .social{
+    margin-top: 0px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.container .contactInfo .social .locate,
+.container .contactInfo .social .phone,
+.container .contactInfo .social .email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.container .contactInfo .social .locate p,
+.container .contactInfo .social .phone p,
+.container .contactInfo .social .email p{
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    width: 300px;
+}
+
+textarea::-webkit-scrollbar{
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(194,194,194,0.713);
+}
+
+@media (max-width: 1064px) {
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20%;
+    }
+
+    .container .contactInfo{
+        width: 670px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .container form{
+        width: 300px;
+        height: 450px;
+    }
+
+    .container form h1{
+        margin-top: 10px;
+    }
+
+    .container form input{
+        width: 250px;
+    }
+
+    .container form #lastName,
+    .container form #mobile{
+        margin-left: 0px;
+    }
+
+    .container form h4{
+        width: 250px;
+    }
+
+    .container form textarea{
+        min-width: 250px;
+        max-width: 250px;
+        min-height: 80px;
+        max-height: 80px;
+        padding-bottom: 20px;
+    }
+
+    .container form #button{
+        margin-right: 0px;
+        width: 250px;
+        margin-top: 10px;
+    }
+
+    .container .contactInfo{
+        width: 300px;
+        height: 380px;
+    }
+
+    .container .contactInfo h1{
+        margin-top: 5px;
+    }
+
+    .container .contactInfo .social{
+        width: 250px;
+    }
+    
 }
